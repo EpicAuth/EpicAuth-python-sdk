@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "epicauth"
+version = "1.1.0"
+description = "EpicAuth official Python SDK"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { file = "LICENSE" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+authors = [
+    {name = "EpicAuth", email = "agentreachout@epicauth.cc"}
+]
+
+dependencies = [
+    "requests",
+    "pywin32; platform_system == 'Windows'",
+    "discord-interactions",
+    "qrcode",
+    "pillow"
+]
+
+[project.urls]
+Homepage = "https://epicauth.cc"
+API = "https://epicauth.cc/docs"
+License = "https://www.elastic.co/licensing/elastic-license"
